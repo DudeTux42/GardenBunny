@@ -6,3 +6,4 @@
 
 [node name="PlayerCat" parent="." instance=ExtResource("1_2ivlf")]
 position = Vector2(340, 426)
+move_speed = null
