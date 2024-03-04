@@ -6,23 +6,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n0eay"]
 size = Vector2(10, 6)
 
-[sub_resource type="Animation" id="Animation_qoxhc"]
-resource_name = "idle_down"
-length = 0.4
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [0, 1]
-}
-
 [sub_resource type="Animation" id="Animation_gasq8"]
 length = 0.001
 tracks/0/type = "value"
@@ -38,8 +21,8 @@ tracks/0/keys = {
 "values": [0]
 }
 
-[sub_resource type="Animation" id="Animation_cukn6"]
-resource_name = "walk_down"
+[sub_resource type="Animation" id="Animation_qoxhc"]
+resource_name = "idle_down"
 length = 0.4
 loop_mode = 1
 tracks/0/type = "value"
@@ -52,41 +35,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [2, 3]
-}
-
-[sub_resource type="Animation" id="Animation_svjrb"]
-resource_name = "idle_up"
-length = 0.4
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [4, 5]
-}
-
-[sub_resource type="Animation" id="Animation_ietnt"]
-resource_name = "walk_up"
-length = 0.4
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [6, 7]
+"values": [0, 1]
 }
 
 [sub_resource type="Animation" id="Animation_76iw7"]
@@ -106,23 +55,6 @@ tracks/0/keys = {
 "values": [8, 9]
 }
 
-[sub_resource type="Animation" id="Animation_yfdne"]
-resource_name = "walk_left"
-length = 0.4
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [10, 11]
-}
-
 [sub_resource type="Animation" id="Animation_86jse"]
 resource_name = "idle_right"
 length = 0.4
@@ -140,6 +72,57 @@ tracks/0/keys = {
 "values": [12, 13]
 }
 
+[sub_resource type="Animation" id="Animation_svjrb"]
+resource_name = "idle_up"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_cukn6"]
+resource_name = "walk_down"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_yfdne"]
+resource_name = "walk_left"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [10, 11]
+}
+
 [sub_resource type="Animation" id="Animation_bxws6"]
 resource_name = "walk_right"
 length = 0.4
@@ -155,6 +138,23 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [14, 15]
+}
+
+[sub_resource type="Animation" id="Animation_ietnt"]
+resource_name = "walk_up"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [6, 7]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1c73v"]
@@ -193,6 +193,7 @@ blend_point_3/node = SubResource("AnimationNodeAnimation_gv0et")
 blend_point_3/pos = Vector2(0, -1.1)
 min_space = Vector2(-1, -1.1)
 max_space = Vector2(1, 1.1)
+blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1k1ml"]
 animation = &"walk_down"
@@ -217,6 +218,7 @@ blend_point_3/node = SubResource("AnimationNodeAnimation_hj068")
 blend_point_3/pos = Vector2(-1, 0)
 min_space = Vector2(-1, -1.1)
 max_space = Vector2(1, 1.1)
+blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_jegax"]
 advance_mode = 0
@@ -237,19 +239,16 @@ transitions = ["Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_
 graph_offset = Vector2(-156.467, 0)
 
 [node name="PlayerCat" type="CharacterBody2D"]
-position = Vector2(49, 490)
+position = Vector2(8, 9)
 script = ExtResource("1_5f2v8")
-move_speed = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, 3)
+position = Vector2(0, -4)
 texture = ExtResource("1_q2h2y")
 hframes = 4
 vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_n0eay")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -263,5 +262,5 @@ libraries = {
 }
 tree_root = SubResource("AnimationNodeStateMachine_5v0yq")
 anim_player = NodePath("../AnimationPlayer")
-parameters/Idle/blend_position = Vector2(0, 0)
+parameters/Idle/blend_position = Vector2(0.00960004, 0.331746)
 parameters/Walk/blend_position = Vector2(0, 0)
