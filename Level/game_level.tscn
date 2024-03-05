@@ -15,7 +15,7 @@ texture_normal = ExtResource("2_3hpkv")
 action = "left"
 
 [node name="Right" type="TouchScreenButton" parent="."]
-position = Vector2(516, 206)
+position = Vector2(517, 206)
 scale = Vector2(0.257812, 0.257812)
 texture_normal = ExtResource("2_3hpkv")
 action = "right"

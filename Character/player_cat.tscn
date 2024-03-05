@@ -262,5 +262,5 @@ libraries = {
 }
 tree_root = SubResource("AnimationNodeStateMachine_5v0yq")
 anim_player = NodePath("../AnimationPlayer")
-parameters/Idle/blend_position = Vector2(0.00960004, 0.331746)
-parameters/Walk/blend_position = Vector2(0, 0)
+parameters/Idle/blend_position = Vector2(-0.00319999, 0.0174602)
+parameters/Walk/blend_position = Vector2(-0.00959998, 0.296825)
