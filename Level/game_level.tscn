@@ -1,8 +1,33 @@
-[gd_scene load_steps=2 format=3 uid="uid://h6k1row7ej4o"]
+[gd_scene load_steps=3 format=3 uid="uid://h6k1row7ej4o"]
 
 [ext_resource type="PackedScene" uid="uid://6mm2apidbsy5" path="res://Character/player_cat.tscn" id="1_2ivlf"]
+[ext_resource type="Texture2D" uid="uid://btow27vmbhfeu" path="res://icon.svg" id="2_3hpkv"]
 
 [node name="GameLevel" type="Node2D"]
 
 [node name="PlayerCat" parent="." instance=ExtResource("1_2ivlf")]
 position = Vector2(68, 58)
+
+[node name="Left" type="TouchScreenButton" parent="."]
+position = Vector2(445, 206)
+scale = Vector2(0.257812, 0.257812)
+texture_normal = ExtResource("2_3hpkv")
+action = "left"
+
+[node name="Right" type="TouchScreenButton" parent="."]
+position = Vector2(516, 206)
+scale = Vector2(0.257812, 0.257812)
+texture_normal = ExtResource("2_3hpkv")
+action = "right"
+
+[node name="Down" type="TouchScreenButton" parent="."]
+position = Vector2(480, 242)
+scale = Vector2(0.257812, 0.257812)
+texture_normal = ExtResource("2_3hpkv")
+action = "down"
+
+[node name="Up" type="TouchScreenButton" parent="."]
+position = Vector2(481, 171)
+scale = Vector2(0.257812, 0.257812)
+texture_normal = ExtResource("2_3hpkv")
+action = "up"
